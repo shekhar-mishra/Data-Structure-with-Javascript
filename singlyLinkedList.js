@@ -36,6 +36,14 @@ class SinglyLinkedList {
         return newNode
 
     }
+    // Traverse a link list
+    traverseNode() {
+        var current = this.head
+        while (current) {
+            console.log("Traversing node is====",current.val)
+            current=current.next
+        }
+    }
 }
 
 
@@ -47,3 +55,4 @@ list.insertNode("Hey")
 console.log("List after inserting second node=====",list)
 list.insertNode("Hi")
 console.log("listttttt=====",list)
+list.traverseNode()
